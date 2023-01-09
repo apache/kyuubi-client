@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="kyuubi-hive-jdbc" />
+        <module name="kyuubi-client-common_2.12" />
+        <module name="kyuubi-hive-beeline" />
+        <module name="kyuubi-rest-client" />
+        <module name="kyuubi-hive-jdbc-shaded" />
+        <module name="kyuubi-ctl_2.12" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="integration-tests" target="1.8" />
+      <module name="kyuubi-assembly_2.12" target="1.8" />
+      <module name="kyuubi-client" target="1.8" />
+      <module name="kyuubi-client-assembly_2.12" target="1.8" />
+      <module name="kyuubi-client-common_2.12" target="1.8" />
+      <module name="kyuubi-codecov_2.12" target="1.8" />
+      <module name="kyuubi-common_2.12" target="1.8" />
+      <module name="kyuubi-ctl_2.12" target="1.8" />
+      <module name="kyuubi-download" target="1.8" />
+      <module name="kyuubi-events_2.12" target="1.8" />
+      <module name="kyuubi-extension-spark-jdbc-dialect_2.12" target="1.8" />
+      <module name="kyuubi-flink-it_2.12" target="1.8" />
+      <module name="kyuubi-flink-sql-engine_2.12" target="1.8" />
+      <module name="kyuubi-ha_2.12" target="1.8" />
+      <module name="kyuubi-hive-beeline" target="1.8" />
+      <module name="kyuubi-hive-it_2.12" target="1.8" />
+      <module name="kyuubi-hive-jdbc" target="1.8" />
+      <module name="kyuubi-hive-jdbc-shaded" target="1.8" />
+      <module name="kyuubi-hive-sql-engine_2.12" target="1.8" />
+      <module name="kyuubi-jdbc-engine_2.12" target="1.8" />
+      <module name="kyuubi-jdbc-it_2.12" target="1.8" />
+      <module name="kyuubi-metrics_2.12" target="1.8" />
+      <module name="kyuubi-parent" target="1.8" />
+      <module name="kyuubi-rest-client" target="1.8" />
+      <module name="kyuubi-server-plugin" target="1.8" />
+      <module name="kyuubi-server_2.12" target="1.8" />
+      <module name="kyuubi-spark-authz_2.12" target="1.8" />
+      <module name="kyuubi-spark-connector-common_2.12" target="1.8" />
+      <module name="kyuubi-spark-connector-tpcds_2.12" target="1.8" />
+      <module name="kyuubi-spark-connector-tpch_2.12" target="1.8" />
+      <module name="kyuubi-spark-lineage_2.12" target="1.8" />
+      <module name="kyuubi-spark-sql-engine_2.12" target="1.8" />
+      <module name="kyuubi-trino-engine_2.12" target="1.8" />
+      <module name="kyuubi-trino-it_2.12" target="1.8" />
+      <module name="kyuubi-zookeeper-it_2.12" target="1.8" />
+      <module name="kyuubi-zookeeper_2.12" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="kyuubi-client-common_2.12" options="-Xlint:all,-serial,-path" />
+      <module name="kyuubi-common_2.12" options="-Xlint:all,-serial,-path" />
+      <module name="kyuubi-ctl_2.12" options="-Xlint:all,-serial,-path" />
+      <module name="kyuubi-events_2.12" options="-Xlint:all,-serial,-path" />
+      <module name="kyuubi-extension-spark-jdbc-dialect_2.12" options="-Xlint:all,-serial,-path" />
+      <module name="kyuubi-flink-it_2.12" options="-Xlint:all,-serial,-path" />
+      <module name="kyuubi-flink-sql-engine_2.12" options="-Xlint:all,-serial,-path" />
+      <module name="kyuubi-ha_2.12" options="-Xlint:all,-serial,-path" />
+      <module name="kyuubi-hive-beeline" options="-Xlint:all,-serial,-path" />
+      <module name="kyuubi-hive-it_2.12" options="-Xlint:all,-serial,-path" />
+      <module name="kyuubi-hive-jdbc" options="-Xlint:all,-serial,-path" />
+      <module name="kyuubi-hive-jdbc-shaded" options="-Xlint:all,-serial,-path" />
+      <module name="kyuubi-hive-sql-engine_2.12" options="-Xlint:all,-serial,-path" />
+      <module name="kyuubi-jdbc-engine_2.12" options="-Xlint:all,-serial,-path" />
+      <module name="kyuubi-jdbc-it_2.12" options="-Xlint:all,-serial,-path" />
+      <module name="kyuubi-metrics_2.12" options="-Xlint:all,-serial,-path" />
+      <module name="kyuubi-rest-client" options="-Xlint:all,-serial,-path" />
+      <module name="kyuubi-server-plugin" options="-Xlint:all,-serial,-path" />
+      <module name="kyuubi-server_2.12" options="-Xlint:all,-serial,-path" />
+      <module name="kyuubi-spark-authz_2.12" options="-Xlint:all,-serial,-path" />
+      <module name="kyuubi-spark-connector-common_2.12" options="-Xlint:all,-serial,-path" />
+      <module name="kyuubi-spark-connector-tpcds_2.12" options="-Xlint:all,-serial,-path" />
+      <module name="kyuubi-spark-connector-tpch_2.12" options="-Xlint:all,-serial,-path" />
+      <module name="kyuubi-spark-lineage_2.12" options="-Xlint:all,-serial,-path" />
+      <module name="kyuubi-spark-sql-engine_2.12" options="-Xlint:all,-serial,-path" />
+      <module name="kyuubi-trino-engine_2.12" options="-Xlint:all,-serial,-path" />
+      <module name="kyuubi-trino-it_2.12" options="-Xlint:all,-serial,-path" />
+      <module name="kyuubi-zookeeper-it_2.12" options="-Xlint:all,-serial,-path" />
+      <module name="kyuubi-zookeeper_2.12" options="-Xlint:all,-serial,-path" />
+    </option>
+  </component>
+</project>

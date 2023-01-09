@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/kyuubi-client.iml" filepath="$PROJECT_DIR$/kyuubi-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kyuubi-client-assembly/kyuubi-client-assembly_2.12.iml" filepath="$PROJECT_DIR$/kyuubi-client-assembly/kyuubi-client-assembly_2.12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kyuubi-client-common/kyuubi-client-common_2.12.iml" filepath="$PROJECT_DIR$/kyuubi-client-common/kyuubi-client-common_2.12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dev/kyuubi-codecov/kyuubi-codecov_2.12.iml" filepath="$PROJECT_DIR$/dev/kyuubi-codecov/kyuubi-codecov_2.12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kyuubi-ctl/kyuubi-ctl_2.12.iml" filepath="$PROJECT_DIR$/kyuubi-ctl/kyuubi-ctl_2.12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kyuubi-hive-beeline/kyuubi-hive-beeline.iml" filepath="$PROJECT_DIR$/kyuubi-hive-beeline/kyuubi-hive-beeline.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kyuubi-hive-jdbc/kyuubi-hive-jdbc.iml" filepath="$PROJECT_DIR$/kyuubi-hive-jdbc/kyuubi-hive-jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kyuubi-hive-jdbc-shaded/kyuubi-hive-jdbc-shaded.iml" filepath="$PROJECT_DIR$/kyuubi-hive-jdbc-shaded/kyuubi-hive-jdbc-shaded.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kyuubi-rest-client/kyuubi-rest-client.iml" filepath="$PROJECT_DIR$/kyuubi-rest-client/kyuubi-rest-client.iml" />
+    </modules>
+  </component>
+</project>
