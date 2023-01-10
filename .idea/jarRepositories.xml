@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="raptor.thirdparty" />
+      <option name="name" value="raptor.thirdparty" />
+      <option name="url" value="https://ebaycentral.qa.ebay.com/content/repositories/thirdparty" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="gcs-maven-central-mirror" />
+      <option name="name" value="GCS Maven Central mirror Asia Pacific" />
+      <option name="url" value="https://maven-central-asia.storage-download.googleapis.com/maven2/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="raptor.aggregator" />
+      <option name="name" value="raptor.aggregator" />
+      <option name="url" value="https://ebaycentral.corp.ebay.com/content/groups/aggregator/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="raptor.releases" />
+      <option name="name" value="raptor.releases" />
+      <option name="url" value="https://ebaycentral.qa.ebay.com/content/repositories/releases" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="raptor.commercial" />
+      <option name="name" value="raptor.commercial" />
+      <option name="url" value="https://ebaycentral.qa.ebay.com/content/repositories/commercial" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="raptor.snapshots" />
+      <option name="name" value="raptor.snapshots" />
+      <option name="url" value="https://ebaycentral.qa.ebay.com/content/repositories/snapshots" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="raptor.v3debt" />
+      <option name="name" value="raptor.v3debt" />
+      <option name="url" value="https://ebaycentral.qa.ebay.com/content/repositories/v3debt" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="apache.snapshots" />
+      <option name="name" value="Apache Snapshot Repository" />
+      <option name="url" value="https://repository.apache.org/snapshots" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Repository" />
+      <option name="url" value="https://ebaycentral.qa.ebay.com/content/repositories/central" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+  </component>
+</project>

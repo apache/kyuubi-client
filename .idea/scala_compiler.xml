@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <profile name="Maven 1" modules="integration-tests,kyuubi-assembly_2.12,kyuubi-client,kyuubi-client-assembly_2.12,kyuubi-client-common_2.12,kyuubi-codecov_2.12,kyuubi-common_2.12,kyuubi-ctl_2.12,kyuubi-download,kyuubi-events_2.12,kyuubi-extension-spark-jdbc-dialect_2.12,kyuubi-flink-it_2.12,kyuubi-flink-sql-engine_2.12,kyuubi-ha_2.12,kyuubi-hive-beeline,kyuubi-hive-it_2.12,kyuubi-hive-jdbc,kyuubi-hive-jdbc-shaded,kyuubi-hive-sql-engine_2.12,kyuubi-jdbc-engine_2.12,kyuubi-jdbc-it_2.12,kyuubi-metrics_2.12,kyuubi-parent,kyuubi-rest-client,kyuubi-server-plugin,kyuubi-server_2.12,kyuubi-spark-authz_2.12,kyuubi-spark-connector-common_2.12,kyuubi-spark-connector-tpcds_2.12,kyuubi-spark-connector-tpch_2.12,kyuubi-spark-lineage_2.12,kyuubi-spark-sql-engine_2.12,kyuubi-trino-engine_2.12,kyuubi-trino-it_2.12,kyuubi-zookeeper-it_2.12,kyuubi-zookeeper_2.12">
+      <option name="deprecationWarnings" value="true" />
+      <option name="uncheckedWarnings" value="true" />
+      <option name="featureWarnings" value="true" />
+      <option name="explainTypeErrors" value="true" />
+      <parameters>
+        <parameter value="-Yno-adapted-args" />
+        <parameter value="-P:silencer:globalFilters=.*deprecated.*" />
+        <parameter value="-Xfatal-warnings" />
+        <parameter value="-Ywarn-unused:imports" />
+      </parameters>
+      <plugins>
+        <plugin path="$USER_HOME$/.m2/raptor2/com/github/ghik/silencer-plugin_2.12.17/1.7.10/silencer-plugin_2.12.17-1.7.10.jar" />
+      </plugins>
+    </profile>
+  </component>
+</project>

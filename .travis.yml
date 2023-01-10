@@ -1,0 +1,57 @@
+#
+# Licensed to the Apache Software Foundation (ASF) under one or more
+# contributor license agreements.  See the NOTICE file distributed with
+# this work for additional information regarding copyright ownership.
+# The ASF licenses this file to You under the Apache License, Version 2.0
+# (the "License"); you may not use this file except in compliance with
+# the License.  You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+sudo: required
+dist: focal
+arch: arm64-graviton2
+group: edge
+virt: vm
+env: SPARK_LOCAL_IP=localhost
+
+branches:
+  only:
+    - main
+
+language: java
+
+matrix:
+  include:
+  - name: Build Kyuubi Client on Linux ARM64
+    script:
+      - ./build/mvn test $MVN_ARGS -pl kyuubi-client-common,kyuubi-ctl,kyuubi-hive-beeline,kyuubi-hive-jdbc,kyuubi-rest-client -am
+cache:
+  directories:
+    - $HOME/.m2
+
+install:
+  - sudo apt update
+  - sudo apt install -y openjdk-8-jdk
+  - export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-${TRAVIS_CPU_ARCH}"
+  - export PATH="$JAVA_HOME/bin:/usr/share/maven/bin:$PATH"
+  - ./build/mvn --version
+
+before_script:
+  - export MVN_ARGS="-Dmaven.javadoc.skip=true -Drat.skip=true -Dscalastyle.skip=true -Dspotless.check.skip -V -B -ntp -Dorg.slf4j.simpleLogger.defaultLogLevel=warn
+  - ./build/mvn clean install -DskipTests $MVN_ARGS
+
+
+after_success:
+  - echo "Travis exited with ${TRAVIS_TEST_RESULT}"
+
+after_failure:
+  - echo "Travis exited with ${TRAVIS_TEST_RESULT}"
+  - for log in `find * -name "unit-tests.log"`;  do echo "=========$log========="; grep "ERROR" $log -A 100 -B 5; done
