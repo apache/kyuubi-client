@@ -22,7 +22,7 @@ name: License check
 on:
   pull_request:
     branches:
-      - master
+      - main
       - branch-*
 
 concurrency:

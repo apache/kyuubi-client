@@ -20,7 +20,7 @@ name: Dependency
 on:
   pull_request:
     branches:
-      - master
+      - main
       - branch-*
     paths:
       # dependency check happens only pom changes
